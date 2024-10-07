@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light button {
+  background-color: black;
+  color: white;
+}
+
+.dark button {
+  background-color: white;
+  color: black;
+}
+
+
+/* drag and drop  */
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px;
+}
+
+.task-list {
+  min-height: 100px;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.task-list:hover {
+  background-color: #e6e6e6;
+}
+
+.task {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 5px 0;
+  padding: 10px;
+  cursor: grab;
+}
+
+.task:active {
+  cursor: grabbing;
+}
+
+
+
+/* styles.css */
+
+.app {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.content {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.list {
+  display: block;
+}
+
+.list p {
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  padding: 10px;
+}
